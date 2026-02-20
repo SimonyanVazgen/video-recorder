@@ -2,14 +2,14 @@ import subprocess
 import sys
 import os
 
-# Install required packages
-packages = ["opencv-python", "sounddevice", "scipy", "numpy", "pynput"]
-for package in packages:
-    try:
-        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-        print(f"Successfully installed {package}")
-    except subprocess.CalledProcessError:
-        print(f"Failed to install {package}")
+# # Install required packages
+# packages = ["opencv-python", "sounddevice", "scipy", "numpy", "pynput"]
+# for package in packages:
+#     try:
+#         subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+#         print(f"Successfully installed {package}")
+#     except subprocess.CalledProcessError:
+#         print(f"Failed to install {package}")
 
 import cv2
 import sounddevice as sd
